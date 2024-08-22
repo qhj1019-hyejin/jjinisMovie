@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+html, body { width: 100%; height : 100vh; }
+
+section {
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    transition: 1s ease-in-out;
+}
+
+.back-cover {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background: #000000ed;
+    z-index: 1;
+}
+
+h2 {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    z-index: 1;
+    font-size: 2rem !important;
+    text-align: center;
+    line-height: 1.4;
+    font-weight: 300;
+    letter-spacing: -0.7px;
+}
+
+.add-movie-btn {
+    position: absolute;
+    top: 270px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    z-index: 1;
+    font-size: 1.25rem;
+    text-align: center;
+    line-height: 1.4;
+    font-weight: 300;
+    letter-spacing: -0.7px;
+    border: 1px solid #fff;
+    background: transparent;
+    padding: 11px 78px;
+    border-radius: 5px;
+}
+.add-movie-btn:hover {
+    background: #272727;
+    border: 1px solid #272727;
+    color: #c7c7c7;
+    transition: .2s;
+}
+
+.popular-list {
+    position: relative;
+    top: 432px;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.popular-list p {
+    color: #c5c5c5;
+    font-size: 0.9rem;
+    padding-left: 20px;
+    position: absolute;
+    top: 23px;
+}
+.popular-list .swiper-wrapper {
+    padding-top: 56px;
+}
+.popular-list .swiper-slide {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+.popular-list .swiper-slide img {
+    width: 250px;
+    height: 355px;
+}
+/* 화살표 클릭 시 드래그 색상 나오지 않도록 설정 */
+.popular-list .swiper-slide img::selection {
+    background: transparent;
+}
+
+.swiper-button-prev {
+    left: unset !important;
+    right: 37px !important;
+    top: 28px !important;
+}
+.swiper-button-next {
+    top: 28px !important;
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 22px !important;
+    color: #fff;
+}
+
+.popularListSwiper .overview-content {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: #000000db;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
