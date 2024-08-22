@@ -1,5 +1,5 @@
 <?php
-    $apiKey = '52037714ab4788680d64cee2f4acced0';
+    $apiKey = 'API_KEY';
     $language = 'ko-KR';
     $url = 'https://api.themoviedb.org/3/movie/popular?api_key='.$apiKey.'&language='.$language;
 
